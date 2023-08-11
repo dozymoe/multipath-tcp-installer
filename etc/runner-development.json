@@ -1,0 +1,21 @@
+{
+  "modules": [
+    "modules.setup",
+    "modules.python",
+    "modules.virtualenv"
+  ],
+  "setup_modules": [
+    "setup_modules.python"
+  ],
+
+  "python_version": "3.11",
+  "virtualenv_type": "venv",
+
+  "default_project": "installer",
+  "default_variant": "development",
+
+  "configuration": {
+    "development": {
+    }
+  }
+}

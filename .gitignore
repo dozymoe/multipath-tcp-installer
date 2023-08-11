@@ -1,3 +1,4 @@
+/etc/runner.json
 /tmp/
 /var/
 
@@ -6,6 +7,8 @@
 
 # python
 *.pyc
+/.virtualenv/
+/python_modules
 
 # vim
 *.swo
