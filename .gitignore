@@ -1,0 +1,12 @@
+/tmp/
+/var/
+
+# git
+*.orig
+
+# python
+*.pyc
+
+# vim
+*.swo
+*.swp
