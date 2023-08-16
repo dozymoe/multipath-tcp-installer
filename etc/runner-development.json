@@ -2,7 +2,8 @@
   "modules": [
     "modules.setup",
     "modules.python",
-    "modules.virtualenv"
+    "modules.virtualenv",
+    "modules.project"
   ],
   "setup_modules": [
     "setup_modules.python"

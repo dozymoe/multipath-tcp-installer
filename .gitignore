@@ -1,6 +1,7 @@
 /etc/runner.json
 /tmp/
 /var/
+/progress.ini
 
 # git
 *.orig
@@ -9,6 +10,7 @@
 *.pyc
 /.virtualenv/
 /python_modules
+/requirements.txt
 
 # vim
 *.swo
