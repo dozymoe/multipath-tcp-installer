@@ -67,8 +67,8 @@ def update_grub(kernel_version):
 
 
 def main():
-    update_grub('5.4.230')
-    return 0
+    #update_grub('5.4.230')
+    #return 0
 
     if PROGRESS_FILE.exists():
         _progress.read(PROGRESS_FILE)
