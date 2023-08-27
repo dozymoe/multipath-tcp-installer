@@ -56,12 +56,13 @@ def update_grub(kernel_version):
         if not f'{kernel_version}.mptcp' in line:
             continue
 
+        # ToDo: Must add GRUB_DISABLE_SUBMENU=y
         subprocess.check_call(['sed', '-i',
-                fr'/GRUB_DEFAULT\s*=/s/=[a-z0-9">]*$/="1>{index - 1}"/',
+                fr'/GRUB_DEFAULT\s*=/s/=[a-z0-9">]*$/=saved/',
                 '/etc/default/grub'])
-
         subprocess.check_call(['update-grub'])
-        #        line.split()[-2].strip("'")])
+        subprocess.check_call(['grub-set-default',
+                line.split()[-2].strip("'")])
         break
 
 
